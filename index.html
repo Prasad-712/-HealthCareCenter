@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: math;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0px 0px 2px;
+            padding: 10px 200px;
+        }
+
+        .list-item {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            list-style-type: none;
+        }
+
+        li {
+            text-decoration: none;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            cursor: pointer;
+        }
+
+        button {
+            padding: 16px 12px;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            background-color: #a5c422;
+            cursor: pointer;
+            font-family: sans-serif;
+            /* font-size: 14px; */
+            font-weight: 600;
+        }
+
+        .btn1:hover {
+            background-color: rgb(66, 103, 178);
+            /* font-family: 'Times New Roman', Times, serif; */
+            opacity: 20px;
+            /* transform: scale(1.05); */
+            /* font-weight: 600; */
+        }
+
+        .btn2:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .btn3:hover{
+            background-color: antiquewhite;
+            color: black;
+        }
+
+        h3 {
+            font-family: cursive;
+            color: #393939;
+            padding: 15px;
+            font-weight: 500;
+        }
+
+        .hClass {
+            background-color: rgb(140, 230, 6);
+            padding: 0.5px;
+            border-radius: 4px;
+        }
+
+        .btn1 {
+            transition: background-color 0.5s ease-in-out;
+            background-color: rgb(140, 230, 6);
+            padding: 14px 10px;
+        }
+
+        .btn2 {
+            transition: background-color 0.5s ease-in-out;
+            background-color: black;
+            color: white;
+        }
+
+        .btn3{
+            transition: background-color 0.5s ease-in-out;
+            background-color: rgb(66, 103, 178);
+            color: white;
+        }
+
+        .inner-img-sec {
+            /* border: 1px solid black; */
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            background-color: rgba(20, 20, 20, 0.2);
+        }
+
+        .img-section {
+            height: 90vh;
+            background-image: url(https://www.tooplate.com/templates/2098_health/images/slider1.jpg);
+            background-position: inherit;
+            background-repeat: no-repeat;
+            background-attachment: local;
+            background-size: cover;
+        }
+
+        .inner-img-sec>p {
+            color: white;
+            font-family: sans-serif;
+            letter-spacing: 3px;
+            font-size: 0.9rem;
+        }
+
+        .inner-img-sec>h1 {
+            color: white;
+            font-family: sans-serif;
+            font-size: 4rem;
+        }
+
+
+
+        .carousel-container {
+            display: flex;
+            overflow-x: scroll;
+            scroll-snap-type: x mandatory;
+            scroll-behavior: smooth;
+            /* Optional: Hide scrollbar */
+            scrollbar-width: none;
+            /* Firefox */
+            -ms-overflow-style: none;
+            /* IE and Edge */
+        }
+
+        .carousel-container::-webkit-scrollbar {
+            display: none;
+            /* Chrome, Safari, Opera */
+        }
+
+        .carousel-slide {
+            flex: 0 0 100%;
+            /* Each slide takes full width */
+            scroll-snap-align: center;
+            /* Add styling for your slides (e.g., background, padding) */
+            background-color: lightgray;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            /* Include padding and border in element's total width and height */
+        }
+
+        .img1 {
+            height: 90vh;
+            background-image: url(https://www.tooplate.com/templates/2098_health/images/slider1.jpg);
+            background-position: inherit;
+            background-repeat: no-repeat;
+            background-attachment: local;
+            background-size: cover;
+        }
+
+        .img2 {
+            height: 90vh;
+            background-image: url(https://www.tooplate.com/templates/2098_health/images/slider2.jpg);
+            background-position: inherit;
+            background-repeat: no-repeat;
+            background-attachment: local;
+            background-size: cover;
+        }
+        .img3{
+            height: 90vh;
+            background-image: url(https://www.tooplate.com/templates/2098_health/images/slider3.jpg);
+            background-position: inherit;
+            background-repeat: no-repeat;
+            background-attachment: local;
+            background-size: cover;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <h3><span class="hClass">H</span>ealth center</h3>
+        </div>
+        <div class="menu-item">
+            <ui class="list-item">
+                <li>Home</li>
+                <li>About us</li>
+                <li>Doctors</li>
+                <li>News</li>
+                <li></li>
+                <li>
+                    <div class="btn">
+                        <button>Make an appointment</button>
+                    </div>
+                </li>
+            </ui>
+        </div>
+    </div>
+    <!-- <div class="img-section">
+        <div class="inner-img-sec">
+            <p>LET'S MAKE YOUR LIFE HAPPIER</p>
+            <h1>Healthy Living</h1>
+            <div class="btn">
+                <button class="btn1">Meet Our Doctors</button>
+            </div>
+        </div>
+    </div> -->
+    <div class="slider">
+        <div class="carousel-container">
+            <div class="carousel-slide img1">
+                <div class="inner-img-sec">
+                    <p>LET'S MAKE YOUR LIFE HAPPIER</p>
+                    <h1>Healthy Living</h1>
+                    <div class="btn">
+                        <button class="btn1">Meet Our Doctors</button>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-slide img2">
+                <div class="inner-img-sec">
+                    <p>AENEAN LUCTUS LOBORTIS TELLUS</p>
+                    <h1>New Lifestyle</h1>
+                    <div class="btn">
+                        <button class="btn2">More About Us</button>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-slide img3">
+                <div class="inner-img-sec">
+                    <p>PELLENTESSQUE NEC LIBERO NISI</p>
+                    <h1>Healthy Living</h1>
+                    <div class="btn">
+                        <button class="btn3">Read Stories</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
