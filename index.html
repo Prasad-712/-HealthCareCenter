@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <title>Document</title>
     <style>
         * {
@@ -17,14 +18,14 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            box-shadow: 0px 0px 2px;
-            padding: 10px 200px;
+            /* box-shadow: 0px 0px 2px; */
+            padding: 8px 200px;
         }
 
         .list-item {
             display: flex;
             align-items: center;
-            gap: 16px;
+            gap: 28px;
             list-style-type: none;
         }
 
@@ -32,10 +33,11 @@
             text-decoration: none;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             cursor: pointer;
+            color: #717171;
         }
 
         button {
-            padding: 16px 12px;
+            padding: 16px 18px;
             border: none;
             border-radius: 5px;
             color: white;
@@ -50,7 +52,8 @@
 
         .btn-appt:hover {
             transition: background-color 0.5s ease-in-out;
-            background-color: rgb(66, 103, 178);;
+            background-color: rgb(66, 103, 178);
+            ;
             /* color: white; */
         }
 
@@ -192,10 +195,70 @@
             background-attachment: local;
             background-size: cover;
         }
+
+        .header {
+            display: grid;
+            align-items: center;
+            padding: 0px 215px;
+            grid-template-columns: 40% 19% 1% 20% 1% 19%;
+            gap: 8px;
+            border: none;
+            border-bottom: 0.2px solid rgba(137, 137, 137, 0.192);
+        }
+
+        .vl {
+            border: none;
+            background-color: rgba(137, 137, 137, 0.192);
+            width: 0.2px;
+            height: 100%;
+            padding: 0;
+        }
+
+        .head-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            align-items: center;
+            margin: 14px 0px;
+        }
+
+        .head-content>p,
+        .header>p {
+            font-size: 0.75rem;
+            font-family: Arial, Helvetica, sans-serif;
+            letter-spacing: 0.5px;
+            color: #8a8a8a;
+        }
+        .head-content>p{
+            font-weight: 700;
+        }
+
+        .head-content>i{
+            color:rgb(135, 217, 12) ;
+            font-size: 12px;
+        }
     </style>
 </head>
 
 <body>
+    <div class="header">
+        <p>Welcome to a Professional Health Care</p>
+        <div class="head-content phone">
+            <i class="fa-solid fa-phone"></i>
+            <p>010-060-0160</p>
+        </div>
+        <div class="vl"></div>
+        <div class="head-content open-close">
+            <i class="fa-solid fa-calendar-week"></i>
+            <p>6:00 AM - 10:00 PM (Mon-Fri)</p>
+        </div>
+        <div class="vl"></div>
+        <div class="head-content mail">
+            <i class="fa-regular fa-envelope"></i>
+            <p>info@company.com</p>
+        </div>
+    </div>
     <div class="navbar">
         <div class="logo">
             <h3><span class="hClass">H</span>ealth center</h3>
